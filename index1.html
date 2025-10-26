@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Всем привет! 
+        Это мой первый сайт в котором рассказывается обо мне и о моих занятия</h1>
+    </head>
+
+    <body>
+        <ul>
+        <li><a href="#p1">кто я такой? </a><br></li><li><a href="#p2">мои увлечения? </a><br></li><li><a href="#p3">что собираюсь делать? </a><br></li><li><a href="#p4">что я умею? </a><br></li><li><a href="#p5">обратная связь </a></li>
+        </ul>
+        <hr>
+        <main>
+            <section id="p1">
+                <h1>кто же я такой?</h1>
+                <p><small>я начинающий програмист занимающийся разработкой веб приложений</small></p>
+            </section>
+            <hr>
+            <section id="p2">
+                <h1>мои увлечения</h1>
+                <p><small><h3>люблю играть в компьютерные игры, такие как:</h3></small></p>
+                <ul>
+                    <p><small><li>Dota 2</li></p>
+                    <p><li>CS2</li></p>
+                    <p><li>RUST</li></small></p>
+                </ul>
+                <p><small><h3>все они являются многопользовательскими играми в жанре экшен</h3></small></p>
+            </section>
+            <hr>
+            <section id="p3">
+                <h1>чем планирую заниматся</h1>
+                <p><small><h3>вообще планирую стать програмистом что впринцапм не удевительно</h3></small></p>
+            </section>
+            <hr>
+            <section id="p4">
+                <h1>мои умения в разрабоке</h1>
+                <ol type="1">
+                    <li>создавать простые HTML страницы</li>
+                    <li>добавлять картинки в проекты</li>
+                    <li>создавать списки и разделы</li>
+                </ol>
+                <h1>что в будующем я научусь делать:</h1>
+                <ul>
+                <li>стилизовать веб страницы</li>
+                </ul>
+                <p><small>"это пока что все что приходит в голову"</small></p>
+            </section>
+            <section>
+                <h1>Свяжитесь со мной в случае ошибок:</h1>
+            </section>
+            <hr>
+        </main>
+        <section id="p5">
+        <form>
+    <label>Имя:</label>
+    <input type="text" placeholder="введите имя"><br><br>
+    <label>Email:</label>
+    <input type="email" placeholder="Email@mail.com"><br><br>
+        <form action="/send" method="post">
+            <label for="them">выберете тему проблемы</label>
+            <select name="thems" required>
+                <option value="" disabled selected>выберете проблему</option>
+                <option value="lag">лагает сайт</option>
+                <option value="down">долгая загрузка</option>
+            </select>
+        </form>
+    <option value=""></option>
+    <label for="text">Сообщение:</label><br>
+    <textarea name="text" id="text"
+    rows="5" cols="20" placeholder="опишите проблему"></textarea><br><br>
+    <button type="submit">отправить</button>
+ </form>
+</section>
+    </body>
+</html>
