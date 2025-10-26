@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Всем привет! 
-        Это мой первый сайт в котором рассказывается обо мне и о моих занятия</h1>
+        
     </head>
 
     <body>
+        <header id="head">
+            <h1>Всем привет! 
+        Это мой первый сайт в котором рассказывается обо мне и о моих занятия</h1>
         <ul>
         <li><a href="#p1">кто я такой? </a><br></li><li><a href="#p2">мои увлечения? </a><br></li><li><a href="#p3">что собираюсь делать? </a><br></li><li><a href="#p4">что я умею? </a><br></li><li><a href="#p5">обратная связь </a></li>
         </ul>
+        </header>
         <hr>
         <main>
             <section id="p1">
@@ -48,29 +51,34 @@
             <section>
                 <h1>Свяжитесь со мной в случае ошибок:</h1>
             </section>
-            <hr>
-        </main>
-        <section id="p5">
+            <section id="p5">
+                <fieldset>
+                    <legend>свяжитесь со мной</legend>
         <form>
-    <label>Имя:</label>
-    <input type="text" placeholder="введите имя"><br><br>
-    <label>Email:</label>
-    <input type="email" placeholder="Email@mail.com"><br><br>
+    <label for="name">Имя:</label>
+    <input id="name" name="name" placeholder="введите имя"><br><br>
+    <label for="email">Email:</label>
+    <input id="email" name="email" placeholder="Email@mail.com"><br><br>
         <form action="/send" method="post">
             <label for="them">выберете тему проблемы</label>
-            <select name="thems" required>
+            <select id="them" name="them" required>
                 <option value="" disabled selected>выберете проблему</option>
                 <option value="lag">лагает сайт</option>
                 <option value="down">долгая загрузка</option>
             </select>
-        </form>
-    <option value=""></option>
+            <option value="text"></option>
     <label for="text">Сообщение:</label><br>
     <textarea name="text" id="text"
     rows="5" cols="20" placeholder="опишите проблему"></textarea><br><br>
     <button type="submit">отправить</button>
- </form>
+        </form>
+</fieldset>
+        </main>
+        <hr>
+        <footer>
+            <p><b>путь в разработке веб</b></p>
+            <a href="#head">в начало страницы</a>
+        </footer>
 </section>
     </body>
 </html>
-
